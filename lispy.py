@@ -155,3 +155,4 @@ class LispInterpreter():
     def interpret(self, expr):
         val = self.eval(self.parse(expr))
         if val is not None: print(self.to_string(val))
+        return val
